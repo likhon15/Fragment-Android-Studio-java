@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="40sp"
+           android:textStyle="bold"
+           android:text="BMI Calculator" />
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingTop="30sp"
+           android:id="@+id/firstVal"
+           android:paddingRight="70pt"
+           android:paddingLeft="70pt"
+           />
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingTop="30sp"
+           android:id="@+id/secondVal"
+           android:paddingRight="70pt"
+           android:paddingLeft="70pt"
+           />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="submit"
+           android:id="@+id/bmiBtn"
+           android:onClick="calcBMI"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="40sp"
+           android:id="@+id/showRES"
+           android:text="Show BMI" />
+   </LinearLayout>
+</FrameLayout>
